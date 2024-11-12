@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación</title>
+    <style>
+        body {
+            background-color: rgba(198, 163, 211, 0.753);/* Define el color del fondo de la pagina */
+            
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;/* centra las 2 cajas principales horizontalmente */
+            margin-top: 70px; /* separa 70 px del margen superior de la pagina*/
+            gap: 10px; /* separa 10 px los elementos hijos*/
+        }
+
+        .ana {
+            height: 450px; /* define la altura de la caja*/
+            width: 320px; /* define el ancho de la caja*/
+            background-color: white; /* define el color de fondo de la caja*/ 
+            position: relative; /* hace que el position absolute funcione como referencia*/
+            border-radius: 10px; /* define la circunferencia del borde*/
+        }
+
+        .mina {
+            height: 450px;/* define la altura de la caja*/
+            width: 320px; /* define el ancho de la caja*/
+            background-color: white; /* define el color de fondo de la caja*/ 
+            position: relative; /* hace que el position absolute funcione como referencia*/
+            border-radius: 10px;/* define la circunferencia del borde*/
+        }
+
+        .on {
+            border-radius: 12px; /* define la circunferencia del borde de la caja*/
+            background-color: rgb(73, 197, 36); /* color del fondo de la caja*/
+            position: absolute; /* con los valores de top-bottom-right-left definen la posicion exacta tomando como referencia el position relative*/
+            right: 10px;
+            top: 15px;
+            height: 33px; /* altura de la caja*/
+            display: flex;
+            align-items: center; /* centra los elementos verticalmente*/
+            padding: 0px 6px; /* el primer valor definen el espacio arriba y abajo entre la caja, y el 2do valor a la derecha y izquierda*/
+            color: white; /* define el color del texto*/
+        }
+
+        .off {
+            border-radius: 12px; /* define la circunferencia del borde de la caja*/
+            background-color: rgb(186, 11, 11); /* color del fondo de la caja*/
+            position: absolute; /* con los valores de top-bottom-right-left definen la posicion exacta tomando como referencia el position relative*/
+            right: 10px;
+            top: 15px;
+            height: 33px; /* altura de la caja*/
+            display: flex;
+            align-items: center; /* centra los elementos verticalmente*/
+            padding: 0px 6px; /* el primer valor definen el espacio arriba y abajo entre la caja, y el 2do valor a la derecha y izquierda*/
+            color: white;  /* define el color del texto*/
+        }
+
+        .img {
+            margin-top: 30px; /* espacio entre la imagen y el margen superior*/
+            display: flex;
+            justify-content: center; /* centra los elementos horizontalmente*/
+        }
+
+        .nombre {
+            display: flex;
+            justify-content: center; /* centra los elementos horizontalmente*/
+            font-weight: 800; /*define el grosor de la letra del texto*/
+            font-size: 28px; /* define el tamaño del texto*/
+        }
+
+        .descripcion {
+            display: flex;
+            align-items: center; /* centra los elementos verticalmente*/
+            flex-direction: column; /* cambia el flujo de los elementos, ubicandolos verticalmente*/
+            color: gray; /* color del texto*/
+            padding: 0px 30px; /* espacio entre el elemento y los bordes*/
+            margin-top: -30px; /* con numeros negativos se achica la distancia entre los elementos en el margen superior*/
+        }
+
+        .redes {
+            border-top: 1px solid rgb(213, 212, 212); /* grosor, tipo de linea y color del borde superior del elemento*/
+            padding-top: 20px; /*espacio entre el elemento y el margen superior de la caja*/
+            display: flex;
+            justify-content: center; /* centra los elementos horizontalmente*/
+            gap: 25px; /* espacio entre los elementos*/
+            margin-right: 20px; /* espacio entre el elemento y el margen derecho*/
+            margin-left: 20px; /* espacio entre el elemento y el margen izquierdo*/
+        }
+
+        .contactar {
+            height: 50px; /* altura del boton*/
+            border-radius: 22px; /*define la circunferencia de los bordes del boton*/
+            background-color: rgb(0, 102, 255); /* color de fondo del boton*/
+            position: fixed; /* defa fija la caja en una posición de la pantalla, quedandose ahi incluso si nos desplazamos a lo largo de la pagina*/
+            bottom: 30px;
+            right: 20px; /* definen ubicacion del boton*/
+            gap: 8px; /* espacio entre los elementos*/
+            display: flex;
+            align-items: center; /* centra los elementos verticalmente*/
+            justify-content: center; /* centra los elementos horizontalmente*/
+            color: white; /*color del texto*/
+            width: 115px; /* define el ancho del boton*/
+            border: 1px solid  rgb(0, 102, 255); /* definen el grosor, tipo de linea y color del borde del boton*/
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <div class="ana">
+            <div class="on">
+                <p>Online</p>
+            </div>
+            <div class="img">
+                <img style="border: 3px solid  rgb(0, 102, 255); border-radius: 30px;" src="https://via.placeholder.com/150.png"
+                    alt="">
+            </div>
+            <div class="nombre">
+                <p><b>Ana García</b></p>
+            </div>
+            <div class="descripcion">
+                <div>
+                    <p>Desarrolladora Web Frontend</p>
+                </div>
+                <div style="margin-top: -20px;">
+                    <p> Apasionada por crear experiencias web increibles para toda la comunidad de Rio Negro</p>
+                </div>
+            </div>
+
+            <div class="redes">
+               <a href=""><img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" alt="" height="30px"></a> 
+                <a href=""><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="" height="30px"></a>
+               <a href=""> <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" alt="" height="30px"></a>
+            </div>
+        </div>
+        <div class="mina">
+            <div class="off">
+                <p>Offline</p>
+            </div>
+            <div class="img">
+                <img style="border: 3px solid  rgb(0, 102, 255); border-radius: 30px;" src="https://via.placeholder.com/150.png"
+                    alt="">
+            </div>
+            <div class="nombre">
+                <p><b>Mina Murray</b></p>
+            </div>
+            <div class="descripcion">
+                <div>
+                    <p>Backend Developer</p>
+                </div>
+                <div style="margin-top: -20px;">
+                    <p>Experiencia desarrollando micro-servicios y servicios REST. <br>
+                               Experiencia en AWS</p>
+
+                </div>
+            </div>
+            <div class="redes">
+                <a href=""><img src="https://cdn-icons-png.flaticon.com/128/733/733579.png" alt="" height="30px"></a> 
+                <a href=""><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="" height="30px"></a>
+               <a href=""> <img src="https://cdn-icons-png.flaticon.com/128/733/733553.png" alt="" height="30px"></a>
+            </div>
+        </div>
+
+        <button class="contactar">
+           <p> ✉️ Contactar</p>
+        </button>
+
+    </main>
+</body>
+
+</html>
